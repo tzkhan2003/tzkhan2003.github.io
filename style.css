@@ -6,6 +6,16 @@
     clear: both;
     display: table;
     }
+.t{
+  float: right;
+  margin-top: 0;
+  padding: 0;
+
+  background-color: tomato;
+
+
+}
+
 [class*="col-"] {
         float: left;
         padding: 15px;
@@ -73,7 +83,7 @@
       }
       #th{
           border-style: dashed;
-          border-color: ;
+          border-color: violet;
       }
       @media only screen and (min-width: 786px) {
         /* For tablets: */
