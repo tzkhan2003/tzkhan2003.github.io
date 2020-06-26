@@ -28,6 +28,7 @@ body {
 }
 .k{
   float: right;
+  color: red;
 }
 .topnav a:hover {
   background-color: #ddd;
