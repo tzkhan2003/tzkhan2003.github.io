@@ -28,6 +28,10 @@ body {
   background-color: #4CAF50;
   color: white;
 }
+.bal{
+  text-align: center;
+  font-size: 0vw;
+}
 
 .topnav .icon {
   display: none;
