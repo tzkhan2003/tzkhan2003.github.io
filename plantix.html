@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <link href="https://fonts.googleapis.com/css2?family=Alike" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .nav {
+            list-style-type:none;
+            margin: 0;
+            padding: 0;
+            position: fixed;
+            width: 100%;
+            background-color:#04A3F8;
+            height: auto;
+            overflow: hidden;
+            top:0;
+            z-index:100;
+            }
+        .nav li {
+            float: right;
+            }
+        .nav li a{
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            }
+        .nav li a:hover{
+            background-color: gray;
+        }
+        .nav a:hover{
+            background-color: gray;
+        }
+        .nav1 {
+            list-style-type:none;
+            position: fixed;
+            width: 100%;
+            background-color:#76F39B;
+            height: auto;
+            overflow: hidden;
+            top:7mm;
+            padding:0;
+            z-index:100;
+            }
+        .nav1 li {
+            float: right;
+            }
+        .active{
+            background-color: #111;
+        }
+        .column{
+            float: left;
+            width:50%;
+            }
+        .column1{
+            float: left;
+            width:20%;
+        }
+        .row:after{
+            content: '';
+            display: table;
+            clear: both;
+        }
+
+        
+        .list{
+            padding-top: 5mm;
+            font-family:andale monospace;
+        }
+        .list li, .list li ul li{
+            padding-top: 5mm;
+            font-family:andale monospace ;
+        }
+        .img{
+            padding-top:3mm;
+            float: left;
+            opacity: 0.8;
+            display: block;
+            
+        }
+        .img:hover{
+            opacity: 1.0;
+            overflow: hidden;
+            transition: transform 0.8s;
+            transform-style: preserve-3d;
+            transform: rotateY(180deg);
+
+        }
+        #mySidenav a {
+        position: fixed;
+        left: -80px;
+        transition: 0.3s;
+        padding: 15px;
+        width: 100px;
+        text-decoration: none;
+        font-size: 20px;
+        color: white;
+        border-radius: 0 5px 5px 0;
+        }
+
+        #mySidenav a:hover {
+        left: 0;
+        }
+
+        #about {
+        top: 85px;
+        background-color: #4CAF50;
+        }
+
+        #blog {
+        top: 145px;
+        background-color: #2196F3;
+        }
+
+        #projects {
+        top: 205px;
+        background-color: #f44336;
+        }
+
+        #contact {
+        top: 265px;
+        background-color: #555
+        }
+        .icon-bar {
+        position: fixed;
+        top: 76%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        }
+
+        .icon-bar a {
+        display: block;
+        text-align: center;
+        padding: 16px;
+        transition: all 0.3s ease;
+        color: white;
+        font-size: 20px;
+        }
+
+        .icon-bar a:hover {
+        background-color: #000;
+        }
+
+        .facebook {
+        background: #3B5998;
+        color: white;
+        }
+
+        .twitter {
+        background: #55ACEE;
+        color: white;
+        }
+
+        .google {
+        background: #dd4b39;
+        color: white;
+        }
+
+        .linkedin {
+        background: #007bb5;
+        color: white;
+        }
+
+        .youtube {
+        background: #bb0000;
+        color: white;
+        }
+        
+
+    </style>
+    <title>Computer Vision||Plantix</title>
+    <link rel='shortcut icon' href="image/technology.png">
+    </head>
+
+    <body>
+        <div class="icon-bar">
+            <a href="https://www.facebook.com/Plantix/" class="facebook"><i class="fa fa-facebook"></i></a> 
+            <a href="https://twitter.com/plantixapp?lang=en" class="twitter"><i class="fa fa-twitter"></i></a> 
+            <a href="https://plantix.net/en/" class="google"><i class="fa fa-google"></i></a> 
+            <a href="https://www.linkedin.com/company/peat-ug-haftungsbeschr%C3%A4nkt-" class="linkedin"><i class="fa fa-linkedin"></i></a>
+            <a href="https://www.youtube.com/channel/UCr2eDB6CRRS5Z9Yec646tMg" class="youtube"><i class="fa fa-youtube"></i></a> 
+          </div>
+        <div id="mySidenav" class="sidenav;position:fixed;">
+            <a href="plantix.html" id="about">Plantix</a>
+            <a href="farmbot.html" id="blog">Farmbot</a>
+            <a href="http://www.fao.org/bangladesh/programmes-and-projects/project-list/en/" id="projects">Projects</a>
+            <a href="contact.html" id="contact">Contact</a>
+          </div>
+        <div style="width: 100%;">
+            <ul class="nav">
+                <li><a href="plantix-ban.html"><i class="fa fa-caret-down"></i>বাংলা</a></li>
+                <a href="">  <img style="float:left;padding-left:3mm;" width="35"height="35" src="image/interface.png"></a>
+                <li><a href="#">Search</a></li>
+                <input style="float:right;margin-top:3mm;margin-left:1mm;margin-right:1mm;">
+                <li ><img style="padding-top:3mm;float: left;" width="20"height="20" src="image/search.png"></li>
+                <li ><a href="blank.html">Support</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li class="active" ><a href="news.html">News</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li style="padding-right: 3cm;padding-top:3mm;font-size: 7mm;color:white"><b>Nureal Networking in Agriculture</b></li>
+            </ul>
+        
+        <ul class="nav1">
+            <img style="float:left;padding-left:3mm;" width="35"height="35" src="image/plantix-logo.png">
+            <li style="margin-right: 5mm;margin-top: 3mm;"><i><b>Plantix</b></i></li>
+        </ul>
+        </div>
+        <div class="row">
+            <div class="column1">
+                <p>.</p>
+            </div>
+            <div class="column">
+                <h1 style="padding-top: 2cm;text-align: center;font-family:Rockwell;">Plantix</h1>
+                <h3 style="text-align: center;">Personal assistent for Farmers</h3>
+                <ul>
+                    <li>Paste managment</li>
+                    <li>Diseas Cure</li>
+                    <li>High efficient Virtual Machine</li>
+                </ul>
+                <p><b><large>P</large>lantix</b>is a mobile crop advisory app for farmers, extension workers and gardeners. Plantix was developed by PEAT GmbH, a Berlin-based <abbr title="Artificial Intiligency">AI</abbr> startup. It can diagnose pest damage, plant disease and nutrient deficiencies affecting crops and can offer corresponding treatment measures. Users can participate in the online community where they can find scientists, farmers and plant experts to discuss plant health issues and access their local weather reports. According to developers as more people use the app it becomes more accurate as the algorithm obtains more information.  Due to the Plantix app, PEAT was listed as one of the 6 'Change the World' companies by Fortune Magazine in September 2017. The United Nations Food and Agriculture Organization estimates that between 20 and 40 percent of global crop yields are reduced each year because of plant diseases and pests. The Plantix app can help minimize these effects as users continue to use and share their experiences.</p>
+                <div class='row'>
+                    <div style="float: left;width:50%;height: 5cm;">
+                        <p style="padding-top: 5mm;font-size: 5mm;margin: 2mm;">They can cause curly leaves, deformed fruit, withering, browning and drying of the entire crop. As a result of pest infestation, sucking pests act as vectors for viral diseases and can lead to serious yield losses by sucking the cell sap from crops.</p>
+                    </div>
+                    <div style="float: left;width:50%;height: 5cm;">
+                        <img class="img"width="100%" alt="Plantix" height="100%" src="image/plantix1.jpg">
+                    </div>
+                </div>
+                <p>.<br><br>Sucking pests include aphids, leafhoppers, thrips, whitefly, beetles and mites. They all have one thing in common: their mouths have evolved for piercing and sucking their target plants. They suck sap from the host, and the nutrient poor host plant becomes stunted, distorted, yellowish and show reduced strength and premature leaf loss. Apart from transmitting disease organisms, some of these pests also inject toxic materials into the crop while feeding. To save your crops from heavy losses, our latest blog introduces you to the most important methods of control and prevention from sucking pests.</p>
+                <h2 style="text-align: center;">Preventive Measures</h2>
+                <ul>
+                    <li>Use silver colored plastic mulch to cover the bed to repel sucking pests. Prior to planting the main crop, silver mulch will protect young crops until the foliage becomes lush.</li>
+                    <li>Maintenance of good field sanitation. Eliminate sources of infestation to prevent populations from spreading from one season to the next.</li>
+                    <li>Install yellow and blue sticky traps in large quantity at 30 cm from the ground to monitor the incidence of sucking pests and determine their severity.</li>
+                    <li>Grow barrier-crops along the border of the main crop. Maize, for example, not only attracts white flies, but also protects the main crop from cold and hot winds.</li>
+                    <li>Plan to grow companion crops that attract or deter sucking pests, e.g. some marigolds attract thrips/aphids and can be used as trap crops.</li>
+                </ul>
+                <h3 style="text-align: center;">Chemical Measures</h3>
+                <p>Using pesticides/insecticides is followed on a large scale for pest control aphids, thrips and other sucking pests. It's more effective and faster when compared to other methods but it's also hazardous to the environment. Furthermore an improper use of pesticides/insecticides leads to the development of resistance among pests leading to severe outbreaks, resulting in higher cultivation costs and significant losses. Chemicals for the control of sucking pests are available in various forms: dusts, wettable powders, seed dressings, emulsions and granulates. </p>
+                <img style='margin-left: 25%;'width="50%" height="200" src="image/plantix2.jpg">
+                <br><hr><br>
+            </div>
+        </div>
+        <br><hr><br>
+        <div class='row'>
+        <div style="width:50%;float: left;">
+            <img width="100%" height="500" src="image/plantix-logo.png">
+        </div>
+        <div style="width:40%;;float: left;">
+        <h2 style="text-align:left;margin:0;font-size: 1cm;"><i>Plantix is an open source API provider for Farmers.</i></h2>
+        </div>
+    
+    </div>
+    <iframe style="position: fixed;bottom:0;right: 0;" width="400" height="238" src="https://www.youtube.com/embed/0tQ__k3G17g?autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        </body>
+
+</html>

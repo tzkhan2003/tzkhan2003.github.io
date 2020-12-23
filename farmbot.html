@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <link href="https://fonts.googleapis.com/css2?family=Alike" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .nav {
+            list-style-type:none;
+            margin: 0;
+            padding: 0;
+            position: fixed;
+            width: 100%;
+            background-color:#04A3F8;
+            height: auto;
+            overflow: hidden;
+            top:0;
+            }
+        .nav li {
+            float: right;
+            }
+        .nav li a{
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            }
+        .nav li a:hover{
+            background-color: gray;
+        }
+        .nav a:hover{
+            background-color: gray;
+        }
+        .nav1 {
+            list-style-type:none;
+            position: fixed;
+            width: 100%;
+            background-color:#76F39B;
+            height: auto;
+            overflow: hidden;
+            top:7mm;
+            padding:0;
+            }
+        .nav1 li {
+            float: right;
+            }
+        .active{
+            background-color: #111;
+        }
+        .column{
+            float: left;
+            width:50%;
+        }
+        .column1{
+            float: left;
+            width:20%;
+        }
+        .row:after{
+            content: '';
+            display: table;
+            clear: both;
+        }
+
+        
+        .list{
+            padding-top: 5mm;
+            font-family:andale monospace;
+        }
+        .list li, .list li ul li{
+            padding-top: 5mm;
+            font-family:andale monospace ;
+        }
+        #mySidenav a {
+        position: fixed;
+        left: -80px;
+        transition: 0.3s;
+        padding: 15px;
+        width: 100px;
+        text-decoration: none;
+        font-size: 20px;
+        color: white;
+        border-radius: 0 5px 5px 0;
+        }
+
+        #mySidenav a:hover {
+        left: 0;
+        }
+
+        #about {
+        top: 60px;
+        background-color: #4CAF50;
+        }
+
+        #blog {
+        top: 120px;
+        background-color: #2196F3;
+        }
+
+        #projects {
+        top: 180px;
+        background-color: #f44336;
+        }
+
+        #contact {
+        top: 240px;
+        background-color: #555
+        }
+        .icon-bar {
+        position: fixed;
+        top: 76%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        }
+
+        .icon-bar a {
+        display: block;
+        text-align: center;
+        padding: 12px;
+        transition: all 0.3s ease;
+        color: white;
+        font-size: 20px;
+        }
+
+        .icon-bar a:hover {
+        background-color: #000;
+        }
+
+        .facebook {
+        background: #3B5998;
+        color: white;
+        }
+
+        .twitter {
+        background: #55ACEE;
+        color: white;
+        }
+
+        .google {
+        background: #dd4b39;
+        color: white;
+        }
+
+        .linkedin {
+        background: #007bb5;
+        color: white;
+        }
+
+        .youtube {
+        background: #bb0000;
+        color: white;
+        }
+        .insta {
+        background: #dd4b39;
+        color: white;
+        }
+        
+
+    </style>
+    <title>Computer Vision||FarmBot</title>
+    <link rel='shortcut icon' href="image/technology.png">
+    </head>
+
+    <body>
+        <div class="icon-bar">
+            <a href="https://www.facebook.com/FarmBot.io/" class="facebook"><i class="fa fa-facebook"></i></a> 
+            <a href="http://mobile.twitter.com/farmbotio" class="twitter"><i class="fa fa-twitter"></i></a> 
+            <a href="https://farm.bot/" class="google"><i class="fa fa-google"></i></a> 
+            <a href="https://www.linkedin.com/company/farmbot-io" class="linkedin"><i class="fa fa-linkedin"></i></a>
+            <a href="https://www.youtube.com/channel/UC2O2FyrBnJjzyTSKHxpa9_A" class="youtube"><i class="fa fa-youtube"></i></a> 
+            <a href="http://www.instagram.com/farm.bot/" class="insta"><i class="fa fa-instagram"></i></a> 
+          </div>
+        <div id="mySidenav" class="sidenav;position:fixed;">
+            <a href="plantix.html" id="about">Plantix</a>
+            <a href="farmbot.html" id="blog">Farmbot</a>
+            <a href="http://www.fao.org/bangladesh/programmes-and-projects/project-list/en/" id="projects">Projects</a>
+            <a href="contact.html" id="contact">Contact</a>
+          </div>
+        <div style="width: 100%;">
+        <ul class="nav">
+            <li><a href="farmbot-ban.html"><i class="fa fa-caret-down"></i>বাংলা</a></li>
+            <a href="">  <img style="float:left;padding-left:3mm;" width="35"height="35" src="image/interface.png"></a>
+            <li><a href="#">Search</a></li>
+            <input style="float:right;margin-top:3mm;margin-left:1mm;margin-right:1mm;">
+            <li ><img style="padding-top:3mm;float: left;" width="20"height="20" src="image/search.png"></li>
+            <li ><a href="blank.html">Support</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li class="active" ><a href="news.html">News</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li style="padding-right: 3cm;padding-top:3mm;font-size: 7mm;color:white"><b>Nureal Networking in Agriculture</b></li>
+        </ul>
+        <ul class="nav1">
+            <img style="float:left;padding-left:3mm;" width="35"height="35" src="image/farmbot-logo.png">
+            <li style="margin-right: 5mm;margin-top: 3mm;"><i><b>FarmBot</b></i></li>
+        </ul>
+        </div>
+        <div class="row">
+            <div class="column1">
+                <p>.</p>
+            </div>
+            <div class="column">
+                <h1 style="padding-top: 2cm;text-align: center;font-family:Rockwell;">Farmbot</h1>
+                <h3 style="text-align: center;">Opensource CNC farming</h3>
+                <ul>
+                    <li>Drag & Drop Farming</li>
+                    <li>Farm from anywhere</li>
+                    <li>Complete Customizeable</li>
+                </ul>
+                <p><b><large>F</large>armbot</b> has Graphically design your farm by dragging and dropping plants into the map. The game-like interface is learned in just a few minutes so you’ll have the whole growing season planned in no time.
+
+
+                </p>
+                <div class='row'>
+                    <div style="float: left;width:50%;height: 5cm;">
+                        <p style="padding-top: 5mm;font-size: 5mm;margin: 2mm;">Setup as fast as one hour.It is also easy and fun to assemble. Electornic components are low cost.</p>
+                    </div>
+                    <div style="float: left;width:50%;height: 5cm;">
+                        <img width="100%" alt="FarmBot" height="100%" src="image/farmbot1.webp">
+                    </div>
+                </div>
+                <p>.</P><br><h2 style="text-align: center;">Farming from anywhere</h2><br>
+                    <p>The FarmBot web app can be loaded on any computer, tablet, or smartphone with a modern web browser, giving you the power to manage your garden from anywhere at any time.</p>
+                <p>Our easy-to-use sequence editor allows you to completely customize the way your FarmBot operates. With new support for variables, you can spend less time configuring and more time enjoying the fruits of your FarmBot's labor.
+                    Best of all, no coding is required; simply drag and drop basic commands into your desired order, adjust the parameters, and save.
+                    </p>
+                <p>Using the manual controls, you can move FarmBot and operate its tools and peripherals in real-time. Scare birds away while at work, take photos of your veggies, turn the lights on for a night time harvest, or simply impress your friends and neighbors with a quick demo. </p>
+                <img style='margin-left: 25%;'width="50%" height="200" src="image/farmbot2.webp">
+                <br><hr><br>
+            </div>
+        </div>
+        <br><hr><br>
+        <div class='row'>
+        <div style="width:40%;float: left;">
+            <img width="100%" height="100%" src="image/farmbot-logo.png">
+        </div>
+        <div style="width:50%;;float: left;">
+        <h2 style="text-align: center;margin:0;font-size: 1cm;"><i>Drag & Drop Farming with Remote access.</i></h2>
+        </div>
+    
+    </div>
+    <iframe style="position: fixed;bottom:0;right: 0;" width="400" height="200" src="https://www.youtube.com/embed/6XWiTzFPWWc?autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        </body>
+
+</html>

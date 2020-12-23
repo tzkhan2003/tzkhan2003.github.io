@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <link href="https://fonts.googleapis.com/css2?family=Alike" rel="stylesheet">
+    <style>
+        .nav {
+            list-style-type:none;
+            margin: 0;
+            padding: 0;
+            position: fixed;
+            width: 100%;
+            background-color:#04A3F8;
+            height: auto;
+            overflow: hidden;
+            top:0;
+            }
+        .nav li {
+            float: right;
+            }
+        .nav li a{
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            }
+        .nav li a:hover{
+            background-color: gray;
+        }
+        .nav a:hover{
+            background-color: gray;
+        }
+        .active{
+            background-color: #111;
+        }
+        .column{
+            float: left;
+            width:50%;
+            
+        }
+        .column1{
+            float: left;
+            width:20%;
+        }
+        
+        .row:after{
+            content: '';
+            display: table;
+            clear: both;
+        }
+        .row1:after{
+            content: '';
+            display: table;
+            clear: both;
+        }
+        .row1{
+            height: 2in;
+        }
+        .list{
+            padding-top: 5mm;
+            font-family:andale monospace;
+        }
+        .list li, .list li ul li{
+            padding-top: 5mm;
+            font-family:andale monospace ;
+        }
+        body{
+            background-image: url('back.jpg');
+        }
+        
+        
+
+    </style>
+    <title>Computer Vision||News</title>
+    <link rel='shortcut icon' href="image/technology.png">
+    </head>
+
+    <body style="background-image: url('data:image/jpeg;base64,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');background-repeat: no-repeat;background-size: cover;">
+        <div style="width: 100%;">
+        <ul class="nav">
+            <a href="">  <img style="float:left;padding-left:3mm;" width="35"height="35" src="image/interface.png"></a>
+            <li><a href="#">Search</a></li>
+            <input style="float:right;margin-top:3mm;margin-left:1mm;margin-right:1mm;">
+            <li ><img style="padding-top:3mm;float: left;" width="20"height="20" src="image/search.png"></li>
+            <li ><a href="blank.html">Support</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li class="active" ><a href="news.html">News</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li style="padding-right: 3cm;padding-top:3mm;font-size: 7mm;color:white"><b>Nureal Networking in Agriculture</b></li>
+        </ul>
+        </div>
+        <h1 style="text-align: center;padding-top: 50px;">Farming Tecnology</h1>
+        
+        <div class="row">
+            <div style='float:left;width:35%'>
+                <a style="text-decoration: none;" href="https://www.kickstarter.com/projects/rorymackean/tertill-the-solar-powered-weeding-robot-for-home-g" target="_blank"><img style="margin: 40px 25px;" width="70%" height="200px" src="image/weedbot.jpg"></a>
+                <a style="text-decoration: none;" href="https://plantix.net/en/" target="_blank"><img style="margin: 25px 25px;" width="85%" height="200px" src="image/plantix1.jpg"></a>
+                <a style="text-decoration: none;" href="https://farm.bot" target="_blank"><video style="margin: 25px 25px;" width="85%" height="200px" src="image/farmbot.mp4" controls autoplay loop></video></a>
+            </div>
+            <div style='float:left;width:65%;'>
+                <h2 style="text-align:left;padding-top: 1cm;">Tertill: The solar power weeding robot for home Gardens</h2></a>
+                <a style="text-decoration: none;" href="https://www.kickstarter.com/projects/rorymackean/tertill-the-solar-powered-weeding-robot-for-home-g" target="_blank"><p style="font-size: .5cm;">Weatherproof and self charging, Tertill livs in your vegetable or flower garden and takes care of the weeding.</p></a>
+                <h2 style="text-align:left;padding-top: 5cm;">Plantix :A virtual assistent for the farmers.</h2>
+                <a href='plantix.html'><p style="font-size: .5cm;">Plantix is a mobile crop advisor app for farmers and gardeners.It was developed by PEAT team.</p></a>
+                <h2 style="text-align:left;padding-top: 5cm;">Farmbot:Drag & Drop remote gardening.</h2>
+                <a href='farmbot.html'><p style="font-size: .5cm;">The FarmBot web app can be loaded on any computer, tablet, or smartphone with a modern web browser, giving you the power to manage your garden from anywhere at any time.</p>
+            </div>
+        </div>
+    </body>
+</html>
